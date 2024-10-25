@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  font-family: 'robot', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rs__time {
+  /* min-width: 30px !important; */
+}
+.MuiContainer-root > div > div:last-child {
+  overflow-x: unset;
+}
+
+.MuiListItem-padding {
+  position: sticky !important;
+  position: -webkit-sticky !important;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: white;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.MuiFormLabel-root {
+  text-transform: capitalize;
+}
+
+.calendario {
+  max-width: 100%;
+  /* height: 1000px; */
+  overflow: auto;
+
+  & > div > .MuiPaper-root {
+    display: none !important;
+  }
+
+  .css-1mrufi > div {
+    flex: 1 !important;
+  }
+}
+
+.calendario .MuiTypography-root.MuiTypography-caption {
+  /* transform: rotate(90deg) !important; */
+  writing-mode: vertical-rl;
+}
+
+.calendario .MuiPaper-rounded + div {
+  overflow-x: unset;
+
+  & > div {
+    min-width: 200px;
+  }
+}
+
+.boxPerfil {
+  min-width: 200px;
+}

@@ -1,0 +1,73 @@
+{
+  "menu": {
+    "companies": "empresas",
+    "employees": "empleados",
+    "profile": "perfil",
+    "account": "cuenta",
+    "dashboard": "dashboard",
+    "logout": "logout"
+  },
+  "title": {
+    "company": "empresa",
+    "center": "centro",
+    "manager": "manager",
+    "setting": "configuración",
+    "calender": "calendario",
+    "appointment": "cita",
+    "service": "servicio",
+    "specialities": "especialidades",
+    "schedules": "horarios"
+  },
+  "buttons": {
+    "register": "registrar",
+    "logIn": "sign in",
+    "edit": "editar",
+    "suspend": "suspender",
+    "delete": "borrar",
+    "create": "crear",
+    "back": "atrás",
+    "chooseLogo": "elegir logo",
+    "uploadSettings": "guardar configuración",
+    "cancelAppointment": "cancelar cita"
+  },
+  "inputLabel": {
+    "companyName": "nombre de empresa",
+    "clientName": "nombre del cliente",
+    "clientPhone": "teléfono del cliente",
+    "name": "nombre",
+    "email": "email",
+    "dni": "dni",
+    "password": "contraseña",
+    "action": "acción",
+    "primaryColor": "color primario",
+    "status": "estado",
+    "address": "dirección",
+    "phoneNumber": "teléfono",
+    "service": "servicio",
+    "companyId": "ID de empresa",
+    "initTime": "Inicio",
+    "endTime": "Fin",
+    "remarks": "observaciones",
+    "isAvailable": "Esta disponible?",
+    "duration": "Duración",
+    "monthToDelete": "Mes del año"
+  },
+  "inputOptions": {
+    "active": "activo",
+    "suspend": "suspender"
+  },
+  "messages": {
+    "nameBd": "Name of the database, cannot be edited later*.",
+    "logoPreview": "Logo Preview: Big and Small size",
+    "confirmDelete": "¿Seguro que quieres borrar?",
+    "confirmChanges": "¿Seguro que quieres realizar los cambios?",
+    "cancelAppointment": "¿Seguro que quieres cancelar la cita?",
+    "noservice": "No hay servicios disponibles",
+    "yes": "sí",
+    "no": "no"
+  },
+  "text": {
+    "serviceReq": "Servicios",
+    "clientName": "Cliente"
+  }
+}
