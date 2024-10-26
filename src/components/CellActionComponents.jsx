@@ -7,7 +7,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useInvalidate } from '../utils/Invalidate';
 import { Link } from 'react-router-dom';
 import useRouteDB from '../utils/RouteDB';
-import { EmpleadosContext } from '../pages/SalonesPage';
+import { SalonesContext } from '../pages/SalonesPage';
 import { enqueueSnackbar } from 'notistack';
 import { getError } from '../utils/getError';
 import { useTranslation } from 'react-i18next';
@@ -260,7 +260,7 @@ export const CellActionService = ({ info, setOpen, nombreEmpresa }) => {
   );
 };
 
-export const CellActionEmployee = ({ info, nombreEmpresa }) => {
+export const CellActionSalon = ({ info, nombreEmpresa }) => {
   const { invalidate } = useInvalidate();
   const { setOpen } = useContext(EmpleadosContext);
   const [t] = useTranslation('global');
@@ -269,7 +269,7 @@ export const CellActionEmployee = ({ info, nombreEmpresa }) => {
   const { isPending, mutate } = useMutation({
     mutationFn: async () =>
       await axios
-        .delete(`/users/delete-employee/${nombreEmpresa}/${info._id}`)
+        .delete(`/users/delete-salon/${nombreEmpresa}/${info._id}`)
         .then((res) => res.data),
     onSuccess: () => {
       invalidate(['empleados']);

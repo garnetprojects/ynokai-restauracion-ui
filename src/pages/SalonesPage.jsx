@@ -17,7 +17,7 @@ import {
 import AddIcon from '@mui/icons-material/Add';
 import Grid from '@mui/material/Unstable_Grid2';
 import axios from 'axios';
-import { CellActionEmployee } from '../components/CellActionComponents';
+import { CellActionSalon } from '../components/CellActionComponents';
 import { useInvalidate } from '../utils/Invalidate';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
@@ -68,12 +68,12 @@ const Header = ({ dataBase }) => {
     mutationFn: async (data) => {
       if (open?._id) {
         return await axios
-          .put(`/users/edit-employee/${dataBase}/${open?._id}`, data)
+          .put(`/users/edit-salon/${dataBase}/${open?._id}`, data)
           .then((response) => response.data);
       }
 
       return await axios
-        .post(`/users/create-employee/${dataBase}/${center}`, data)
+        .post(`/users/create-salon/${dataBase}/${center}`, data)
         .then((response) => response.data);
     },
 
@@ -311,7 +311,7 @@ const TableBody = ({ dataBase }) => {
     {
       header: t('inputLabel.action'),
       cell: (info) => (
-        <CellActionEmployee nombreEmpresa={dataBase} info={info.row.original} />
+        <CellActionSalon nombreEmpresa={dataBase} info={info.row.original} />
       ),
     },
   ];
@@ -319,7 +319,7 @@ const TableBody = ({ dataBase }) => {
   const { isLoading, isError, data } = useQuery({
     queryKey: ['empleados'],
     queryFn: () =>
-      axios(`/users/get-all-employees/${dataBase}`).then(
+      axios(`/users/get-all-salones/${dataBase}`).then(
         (response) => response.data
       ),
   });
