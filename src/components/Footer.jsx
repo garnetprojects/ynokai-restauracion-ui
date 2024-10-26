@@ -11,7 +11,7 @@ const Footer = () => {
           alignItems: 'center',
         }}
       >
-        <Box>yNokAI</Box> <ChangeLngBtn />
+        <Box>yNok</Box> <ChangeLngBtn />
       </Container>
     </Box>
   );
