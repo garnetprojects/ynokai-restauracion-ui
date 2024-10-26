@@ -49,7 +49,7 @@ const ServicesBox = ({ disabled, setSelectedOption, selectedOption }) => {
         <Typography>{t('messages.noservice')}</Typography>
       )}
       <Typography mt={1} variant="h6">
-        Servicios
+        Comensales
       </Typography>
 
       <Box gap={1} display={'flex'} flexWrap={'wrap'} maxHeight={200} overflow={'auto'} style={{ resize: 'vertical' }}>
