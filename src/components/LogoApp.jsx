@@ -49,7 +49,7 @@ const LogoApp = ({ version = '' }) => {
                 textDecoration: 'none',
               }}
             >
-              COMQ
+              yNok Restauración
             </Typography>
           </>
         )}
@@ -67,7 +67,7 @@ const LogoApp = ({ version = '' }) => {
         />
       )}
 
-      {!urlLogo && <Typography variant="h1">COMQ</Typography>}
+      {!urlLogo && <Typography variant="h1">yNok Restauración</Typography>}
     </>
   );
 };
