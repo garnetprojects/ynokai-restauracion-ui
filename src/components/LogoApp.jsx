@@ -49,7 +49,7 @@ const LogoApp = ({ version = '' }) => {
                 textDecoration: 'none',
               }}
             >
-              COMQ
+              yNok Restauración
             </Typography>
           </>
         )}
