@@ -31,9 +31,9 @@ import InputPhone from '../components/InputPhone';
 import { eliminarPrimerosCharSiCoinciden } from '../utils/helpers';
 import { phoneCountry } from '../utils/selectData';
 
-export const EmpleadosContext = createContext();
+export const SalonesContext = createContext();
 
-const EmpleadosPage = () => {
+const SalonesPage = () => {
   const [t, i18n] = useTranslation('global');
   const [open, setOpen] = useState(null);
   const { dataBase } = useParams();
@@ -42,7 +42,7 @@ const EmpleadosPage = () => {
     <EmpleadosContext.Provider value={{ open, setOpen }}>
       <Container>
         <Typography variant={'h2'} sx={{ textTransform: 'capitalize' }} mb={2}>
-          {t('menu.employees')}
+          {t('menu.salones')}
         </Typography>
 
         <Header dataBase={dataBase} />
@@ -158,7 +158,7 @@ const Header = ({ dataBase }) => {
       >
         <form action="" onSubmit={handleSubmit}>
           <Typography mt={3} variant="h4" sx={{ textTransform: 'capitalize' }}>
-            {t('menu.employees')}
+            {t('menu.salones')}
           </Typography>
 
           <Grid container spacing={5}>
@@ -341,4 +341,4 @@ const TableBody = ({ dataBase }) => {
   return <TableComponent columns={columns} data={data} />;
 };
 // comentario
-export default EmpleadosPage;
+export default SalonesPage;
