@@ -55,7 +55,7 @@ const SalonesPage = () => {
 
 const Header = ({ dataBase }) => {
   const [t] = useTranslation('global');
-  const { open, setOpen } = useContext(EmpleadosContext);
+  const { open, setOpen } = useContext(SalonesContext);
   const [selectedOption, setSelectedOption] = useState([]);
   const [specialities, setSpecialities] = useState([]);
   const [center, setCenter] = useState('');

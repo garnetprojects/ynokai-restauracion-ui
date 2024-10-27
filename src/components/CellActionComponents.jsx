@@ -262,7 +262,7 @@ export const CellActionService = ({ info, setOpen, nombreEmpresa }) => {
 
 export const CellActionSalon = ({ info, nombreEmpresa }) => {
   const { invalidate } = useInvalidate();
-  const { setOpen } = useContext(EmpleadosContext);
+  const { setOpen } = useContext(SalonesContext);
   const [t] = useTranslation('global');
 
   console.log(info);
