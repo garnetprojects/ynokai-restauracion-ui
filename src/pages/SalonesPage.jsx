@@ -42,7 +42,7 @@ const SalonesPage = () => {
     <EmpleadosContext.Provider value={{ open, setOpen }}>
       <Container>
         <Typography variant={'h2'} sx={{ textTransform: 'capitalize' }} mb={2}>
-          {t('menu.salones')}
+          {t('title.salones')}
         </Typography>
 
         <Header dataBase={dataBase} />
