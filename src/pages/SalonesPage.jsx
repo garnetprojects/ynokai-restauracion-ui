@@ -39,7 +39,7 @@ const SalonesPage = () => {
   const { dataBase } = useParams();
 
   return (
-    <EmpleadosContext.Provider value={{ open, setOpen }}>
+    <SalonesContext.Provider value={{ open, setOpen }}>
       <Container>
         <Typography variant={'h2'} sx={{ textTransform: 'capitalize' }} mb={2}>
           {t('menu.salones')}
@@ -49,7 +49,7 @@ const SalonesPage = () => {
 
         <TableBody dataBase={dataBase} />
       </Container>
-    </EmpleadosContext.Provider>
+    </SalonesContext.Provider>
   );
 };
 
@@ -78,7 +78,7 @@ const Header = ({ dataBase }) => {
     },
 
     onSuccess: (data) => {
-      invalidate(['empleados']);
+      invalidate(['salones']);
       enqueueSnackbar('Accion logrado con exito', { variant: 'success' });
       setOpen(false);
     },
@@ -317,7 +317,7 @@ const TableBody = ({ dataBase }) => {
   ];
 
   const { isLoading, isError, data } = useQuery({
-    queryKey: ['empleados'],
+    queryKey: ['salones'],
     queryFn: () =>
       axios(`/users/get-all-salones/${dataBase}`).then(
         (response) => response.data
