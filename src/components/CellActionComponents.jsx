@@ -7,7 +7,7 @@ import MoreVertIcon from '@mui/icons-material/MoreVert';
 import { useInvalidate } from '../utils/Invalidate';
 import { Link } from 'react-router-dom';
 import useRouteDB from '../utils/RouteDB';
-import { SalonesContext } from '../pages/SalonesPage';
+import { EmpleadosContext } from '../pages/SalonesPage';
 import { enqueueSnackbar } from 'notistack';
 import { getError } from '../utils/getError';
 import { useTranslation } from 'react-i18next';
@@ -262,7 +262,7 @@ export const CellActionService = ({ info, setOpen, nombreEmpresa }) => {
 
 export const CellActionSalon = ({ info, nombreEmpresa }) => {
   const { invalidate } = useInvalidate();
-  const { setOpen } = useContext(SalonesContext);
+  const { setOpen } = useContext(EmpleadosContext);
   const [t] = useTranslation('global');
 
   console.log(info);

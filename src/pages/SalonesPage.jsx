@@ -31,7 +31,7 @@ import InputPhone from '../components/InputPhone';
 import { eliminarPrimerosCharSiCoinciden } from '../utils/helpers';
 import { phoneCountry } from '../utils/selectData';
 
-export const SalonesContext = createContext();
+export const EmpleadosContext = createContext();
 
 const SalonesPage = () => {
   const [t, i18n] = useTranslation('global');
@@ -39,7 +39,7 @@ const SalonesPage = () => {
   const { dataBase } = useParams();
 
   return (
-    <SalonesContext.Provider value={{ open, setOpen }}>
+    <EmpleadosContext.Provider value={{ open, setOpen }}>
       <Container>
         <Typography variant={'h2'} sx={{ textTransform: 'capitalize' }} mb={2}>
           {t('menu.salones')}
@@ -49,13 +49,13 @@ const SalonesPage = () => {
 
         <TableBody dataBase={dataBase} />
       </Container>
-    </SalonesContext.Provider>
+    </EmpleadosContext.Provider>
   );
 };
 
 const Header = ({ dataBase }) => {
   const [t] = useTranslation('global');
-  const { open, setOpen } = useContext(SalonesContext);
+  const { open, setOpen } = useContext(EmpleadosContext);
   const [selectedOption, setSelectedOption] = useState([]);
   const [specialities, setSpecialities] = useState([]);
   const [center, setCenter] = useState('');
