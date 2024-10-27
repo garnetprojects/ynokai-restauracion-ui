@@ -41,7 +41,7 @@ const Navbar = () => {
   }
 
   if (state.userInfo?.role === 'admin') {
-    pages.push({ text: t('menu.salones'), to: '/salones' });
+    pages.push({ text: t('title.salones'), to: '/salones' });
     pages.push({ text: t('title.schedules'), to: '/horarios' });
   }
 
