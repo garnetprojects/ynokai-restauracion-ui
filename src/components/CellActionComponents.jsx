@@ -272,7 +272,7 @@ export const CellActionSalon = ({ info, nombreEmpresa }) => {
         .delete(`/users/delete-salon/${nombreEmpresa}/${info._id}`)
         .then((res) => res.data),
     onSuccess: () => {
-      invalidate(['empleados']);
+      invalidate(['salones']);
       enqueueSnackbar('Se elimino correctamente', { variant: 'success' });
     },
     onError: (err) => {

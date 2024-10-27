@@ -7,7 +7,7 @@ import { PrivateRoutes } from './auth/PrivateRoutes';
 
 import PagesLayout from './Layout/PagesLayout';
 import EmpresaEditPage from './pages/EmpresaEditPage';
-import EmpleadosPage from './pages/EmpleadosPage';
+import SalonesPage from './pages/SalonesPage';
 import ThemeApp from '../theme/ThemeApp';
 import Horarios from './pages/Horarios';
 
@@ -45,8 +45,8 @@ const router = createBrowserRouter([
               },
 
               {
-                path: 'empleados',
-                element: <EmpleadosPage />,
+                path: 'salones',
+                element: <SalonesPage />,
               },
               {
                 path: 'horarios',
