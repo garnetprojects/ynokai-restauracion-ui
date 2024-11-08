@@ -68,12 +68,12 @@ const Header = ({ dataBase }) => {
     mutationFn: async (data) => {
       if (open?._id) {
         return await axios
-          .put(`/users/edit-salon/${dataBase}/${open?._id}`, data)
+          .put(`/users/edit-users/${dataBase}/${open?._id}`, data)
           .then((response) => response.data);
       }
 
       return await axios
-        .post(`/users/create-salon/${dataBase}/${center}`, data)
+        .post(`/users/create-users/${dataBase}/${center}`, data)
         .then((response) => response.data);
     },
 
@@ -319,7 +319,7 @@ const TableBody = ({ dataBase }) => {
   const { isLoading, isError, data } = useQuery({
     queryKey: ['salones'],
     queryFn: () =>
-      axios(`/users/get-all-salones/${dataBase}`).then(
+      axios(`/users/get-all-users/${dataBase}`).then(
         (response) => response.data
       ),
   });
