@@ -317,7 +317,7 @@ const TableBody = ({ dataBase }) => {
   ];
 
   const { isLoading, isError, data } = useQuery({
-    queryKey: ['salones'],
+    queryKey: ['users'],
     queryFn: () =>
       axios(`/users/get-all-users/${dataBase}`).then(
         (response) => response.data
